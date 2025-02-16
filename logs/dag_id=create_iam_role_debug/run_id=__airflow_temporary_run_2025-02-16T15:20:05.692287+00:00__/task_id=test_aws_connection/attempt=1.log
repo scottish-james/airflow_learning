@@ -1,0 +1,27 @@
+[2025-02-16T15:41:32.156+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_iam_role_debug.test_aws_connection __airflow_temporary_run_2025-02-16T15:20:05.692287+00:00__ [queued]>
+[2025-02-16T15:41:32.162+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_iam_role_debug.test_aws_connection __airflow_temporary_run_2025-02-16T15:20:05.692287+00:00__ [queued]>
+[2025-02-16T15:41:32.163+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-02-16T15:41:32.171+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): test_aws_connection> on 2025-02-16 00:00:00+00:00
+[2025-02-16T15:41:32.177+0000] {standard_task_runner.py:57} INFO - Started process 693 to run task
+[2025-02-16T15:41:32.179+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'create_iam_role_debug', 'test_aws_connection', '__***_temporary_run_2025-02-16T15:20:05.692287+00:00__', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/AWS_Setup_DAG.py', '--cfg-path', '/tmp/tmphooc9ll4']
+[2025-02-16T15:41:32.180+0000] {standard_task_runner.py:85} INFO - Job 6: Subtask test_aws_connection
+[2025-02-16T15:41:32.189+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-02-16T15:41:32.243+0000] {task_command.py:416} INFO - Running <TaskInstance: create_iam_role_debug.test_aws_connection __airflow_temporary_run_2025-02-16T15:20:05.692287+00:00__ [running]> on host 44e71d63ec52
+[2025-02-16T15:41:32.295+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='create_iam_role_debug' AIRFLOW_CTX_TASK_ID='test_aws_connection' AIRFLOW_CTX_EXECUTION_DATE='2025-02-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='__***_temporary_run_2025-02-16T15:20:05.692287+00:00__'
+[2025-02-16T15:41:32.302+0000] {base.py:73} INFO - Using connection ID 'aws_default' for task execution.
+[2025-02-16T15:41:32.302+0000] {connection_wrapper.py:378} INFO - AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.
+[2025-02-16T15:41:32.308+0000] {AWS_Setup_DAG.py:69} INFO - AWS Access Key ID ends with: ...MUHS
+[2025-02-16T15:41:32.316+0000] {AWS_Setup_DAG.py:89} ERROR - Error testing AWS connection: 'REGION'
+[2025-02-16T15:41:32.317+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/AWS_Setup_DAG.py", line 75, in test_aws_connection
+    region_name=context['task_instance'].xcom_pull(key='config')['AWS']['REGION']
+KeyError: 'REGION'
+[2025-02-16T15:41:32.323+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=create_iam_role_debug, task_id=test_aws_connection, execution_date=20250216T000000, start_date=20250216T154132, end_date=20250216T154132
+[2025-02-16T15:41:32.329+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 6 for task test_aws_connection ('REGION'; 693)
+[2025-02-16T15:41:32.367+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-02-16T15:41:32.382+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

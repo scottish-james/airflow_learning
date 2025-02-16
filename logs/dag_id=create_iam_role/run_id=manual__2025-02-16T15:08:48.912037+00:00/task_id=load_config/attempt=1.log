@@ -1,0 +1,23 @@
+[2025-02-16T15:08:50.045+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: create_iam_role.load_config manual__2025-02-16T15:08:48.912037+00:00 [queued]>
+[2025-02-16T15:08:50.051+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: create_iam_role.load_config manual__2025-02-16T15:08:48.912037+00:00 [queued]>
+[2025-02-16T15:08:50.051+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2025-02-16T15:08:50.058+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): load_config> on 2025-02-16 15:08:48.912037+00:00
+[2025-02-16T15:08:50.064+0000] {standard_task_runner.py:57} INFO - Started process 7310 to run task
+[2025-02-16T15:08:50.066+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'create_iam_role', 'load_config', 'manual__2025-02-16T15:08:48.912037+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/AWS_Setup_DAG.py', '--cfg-path', '/tmp/tmp8_1pplw9']
+[2025-02-16T15:08:50.069+0000] {standard_task_runner.py:85} INFO - Job 2: Subtask load_config
+[2025-02-16T15:08:50.083+0000] {logging_mixin.py:154} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:195 DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+[2025-02-16T15:08:50.112+0000] {task_command.py:416} INFO - Running <TaskInstance: create_iam_role.load_config manual__2025-02-16T15:08:48.912037+00:00 [running]> on host e4c6a2efe10a
+[2025-02-16T15:08:50.164+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='create_iam_role' AIRFLOW_CTX_TASK_ID='load_config' AIRFLOW_CTX_EXECUTION_DATE='2025-02-16T15:08:48.912037+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-02-16T15:08:48.912037+00:00'
+[2025-02-16T15:08:50.167+0000] {taskinstance.py:1937} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/AWS_Setup_DAG.py", line 31, in load_config
+    raise FileNotFoundError(f"Configuration file not found at {config_path}")
+FileNotFoundError: Configuration file not found at /Users/jamestaylor/***/***-project/iac.cfg
+[2025-02-16T15:08:50.172+0000] {taskinstance.py:1400} INFO - Marking task as UP_FOR_RETRY. dag_id=create_iam_role, task_id=load_config, execution_date=20250216T150848, start_date=20250216T150850, end_date=20250216T150850
+[2025-02-16T15:08:50.180+0000] {standard_task_runner.py:104} ERROR - Failed to execute job 2 for task load_config (Configuration file not found at /Users/jamestaylor/***/***-project/iac.cfg; 7310)
+[2025-02-16T15:08:50.210+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2025-02-16T15:08:50.238+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check
