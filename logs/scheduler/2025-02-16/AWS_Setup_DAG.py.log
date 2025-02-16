@@ -1846,3 +1846,52 @@ SyntaxError: unexpected EOF while parsing
 [2025-02-16T16:16:07.383+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:16:07.383+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2025-02-16T16:16:07.392+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:16:07.392+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
 [2025-02-16T16:16:07.401+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.063 seconds
+[2025-02-16T16:16:38.137+0000] {processor.py:157} INFO - Started process (PID=2867) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:16:38.139+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:16:38.140+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:16:38.140+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:16:38.171+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:16:38.218+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:16:38.218+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:16:38.230+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:16:38.230+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:16:38.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.113 seconds
+[2025-02-16T16:17:08.641+0000] {processor.py:157} INFO - Started process (PID=2901) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:17:08.644+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:17:08.648+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:17:08.646+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:17:08.685+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:17:08.737+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:17:08.737+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:17:08.752+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:17:08.752+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:17:08.769+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.134 seconds
+[2025-02-16T16:17:39.132+0000] {processor.py:157} INFO - Started process (PID=2927) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:17:39.135+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:17:39.136+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:17:39.136+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:17:39.186+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:17:39.236+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:17:39.235+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:17:39.250+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:17:39.249+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:17:39.278+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.161 seconds
+[2025-02-16T16:18:09.720+0000] {processor.py:157} INFO - Started process (PID=2961) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:18:09.723+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:18:09.727+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:18:09.727+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:18:09.753+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:18:09.787+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:18:09.787+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:18:09.800+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:18:09.800+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:18:09.813+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.100 seconds
+[2025-02-16T16:18:40.431+0000] {processor.py:157} INFO - Started process (PID=2987) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:18:40.434+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:18:40.435+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:18:40.434+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:18:40.480+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:18:40.563+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:18:40.562+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:18:40.579+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:18:40.579+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:18:40.596+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.171 seconds
+[2025-02-16T16:19:11.104+0000] {processor.py:157} INFO - Started process (PID=3021) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:19:11.106+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:19:11.108+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:19:11.107+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:19:11.140+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:19:11.201+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:19:11.201+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:19:11.215+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:19:11.215+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:19:11.231+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.134 seconds
+[2025-02-16T16:19:41.585+0000] {processor.py:157} INFO - Started process (PID=3055) to work on /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:19:41.587+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/AWS_Setup_DAG.py for tasks to queue
+[2025-02-16T16:19:41.588+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:19:41.587+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:19:41.609+0000] {processor.py:839} INFO - DAG(s) dict_keys(['create_iam_role_debug']) retrieved from /opt/airflow/dags/AWS_Setup_DAG.py
+[2025-02-16T16:19:41.639+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:19:41.639+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2025-02-16T16:19:41.650+0000] {logging_mixin.py:154} INFO - [2025-02-16T16:19:41.650+0000] {dag.py:3722} INFO - Setting next_dagrun for create_iam_role_debug to None, run_after=None
+[2025-02-16T16:19:41.667+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/AWS_Setup_DAG.py took 0.086 seconds
